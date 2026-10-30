@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ข้อมูลที่พัก บ้านแพ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #7EC8E3;
+    --sky-deep: #4AA3C9;
+    --sun: #FFD56B;
+    --sunset: #FF9A76;
+    --pink: #FFB7C5;
+    --cream: #FFF9F0;
+    --ink: #3B4A5A;
+    --card: #FFFFFF;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    font-family: 'Prompt', 'Sarabun', sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, #CFEFFB 0%, var(--cream) 45%, #FFE3D3 100%);
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+
+  header {
+    text-align: center;
+    background: linear-gradient(135deg, var(--sky) 0%, var(--sun) 55%, var(--sunset) 100%);
+    color: #fff;
+    border-radius: 28px;
+    padding: 28px 20px;
+    box-shadow: 0 10px 30px rgba(255, 154, 118, 0.35);
+    margin-bottom: 20px;
+  }
+  header .emoji { font-size: 44px; }
+  header h1 { margin: 6px 0 4px; font-size: 24px; font-weight: 700; text-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+  header p { margin: 0; opacity: 0.95; font-size: 14px; }
+
+  section {
+    background: var(--card);
+    border-radius: 22px;
+    padding: 18px 18px 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 14px rgba(74, 163, 201, 0.12);
+    border-left: 6px solid var(--sky);
+  }
+  section.sunset { border-left-color: var(--sunset); }
+  section.sun { border-left-color: var(--sun); }
+  section.pink { border-left-color: var(--pink); }
+  section.sea { border-left-color: var(--sky-deep); }
+  h2 { font-size: 17px; margin: 0 0 10px; font-weight: 600; color: var(--sky-deep); }
+  section.sunset h2 { color: #E8704B; }
+  section.sun h2 { color: #D9A21B; }
+  section.pink h2 { color: #E0708A; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  li:last-child { margin-bottom: 0; }
+  .tag {
+    display: inline-block;
+    background: #E6F6FC;
+    color: var(--sky-deep);
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-size: 13px;
+    margin: 2px 2px 2px 0;
+  }
+  .price { font-weight: 600; color: #E8704B; }
+  .free { font-weight: 600; color: #2E9E6B; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box {
+    border-radius: 16px;
+    padding: 12px;
+    background: #FFF6E0;
+  }
+  .box.blue { background: #E6F6FC; }
+  .box.pinkbg { background: #FFEEF2; }
+  .box strong { display: block; margin-bottom: 4px; font-size: 14px; }
+  .box .time { font-size: 20px; font-weight: 700; color: var(--ink); }
+  .phone {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--sunset), var(--sun));
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-top: 6px;
+  }
+  .note { font-size: 13px; color: #7A8794; margin-top: 10px; }
+  footer { text-align: center; color: #7A8794; font-size: 13px; margin-top: 20px; }
+  @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="emoji">🏡🌅</div>
+    <h1>ข้อมูลที่พัก บ้านแพ</h1>
+    <p>สรุปทุกอย่างที่ต้องรู้ก่อนไปเที่ยวด้วยกัน</p>
+  </header>
+
+  <section>
+    <h2>🏠 ภาพรวม</h2>
+    <ul>
+      <li>เป็นโฮมสเตย์บ้านแพกลางน้ำ ให้เราได้ชมวิถีชีวิตชาวบ้าน เลี้ยงปลา ทำไร่ข้าวโพด และพักผ่อนกับธรรมชาติ</li>
+      <li>เช็คอินที่ท่าเรือ ต้องถึงที่พักก่อนพระอาทิตย์ตกนะ</li>
+    </ul>
+  </section>
+
+  <section class="sunset">
+    <h2>🚗 เส้นทางเดินทาง</h2>
+    <ul>
+      <li>ข้ามแพขนานยนต์ไปอำเภอศรีสวัสดิ์ ค่าข้าม <span class="price">60 บาท/คัน</span> (ผู้โดยสารฟรี) ออกทุก 30 นาที วิ่งทั้งคืน</li>
+      <li>ขับต่ออีกประมาณ <strong>800 เมตร</strong> จะเจอป้าย "ฟลุคฝ้ายบริการ" หรือ "ดารัตน์รีสอร์ท" (เป็นชื่อร้านเดิม ไม่ใช่รีสอร์ท)</li>
+      <li>เลี้ยวซ้าย ขับตรงไปจนสุดจนเจอน้ำ แล้วมองขวามือ จะเจอลานจอดรถหลังคาสังกะสีหรือสแลนสีดำ</li>
+      <li>จอดรถได้ฟรี รอเรือรับที่ลานจอดด้านล่าง</li>
+    </ul>
+    <div style="margin-top:12px;">
+      <a class="phone" href="https://maps.app.goo.gl/UGKHPm7awJRW4jjA6" target="_blank" rel="noopener">📍 เปิดแผนที่ Google Maps</a>
+    </div>
+    <div style="margin-top:12px;">
+      <a class="phone" href="tel:0948539459">📞 โทร 094-853-9459</a>
+      <div class="note">เมื่อถึงลานจอดรถ โทรแจ้งทางบ้านด้วยนะ</div>
+    </div>
+  </section>
+
+  <section class="sun">
+    <h2>🛶 เรือรับส่ง</h2>
+    <div class="grid">
+      <div class="box">
+        <strong>ขาเข้า (ฟรี)</strong>
+        <div class="time">14.00 / 15.30 น.</div>
+      </div>
+      <div class="box blue">
+        <strong>ขากลับ (ฟรี)</strong>
+        <div class="time">09.30 / 11.00 น.</div>
+      </div>
+    </div>
+    <ul style="margin-top:12px;">
+      <li>ถ้ามาไม่ทันรอบ มีเรือแท็กซี่หางยาววิ่งรับส่ง <span class="price">100 บาท/เที่ยว</span> (ลูกค้าจ่ายเอง)</li>
+      <li>หลัง 18.00 น. เรือพิเศษ <span class="price">200 บาท/เที่ยว</span> (ถึงไม่เกิน 20.00 น.)</li>
+      <li>หลัง 20.00 น. กรณีฉุกเฉิน <span class="price">300 บาท</span> ติดต่อพนักงานหรือโทรหาทางบ้าน</li>
+    </ul>
+    <div class="note">⚠️ ในเอกสารมีราคาเรือแท็กซี่ไม่ตรงกันบ้าง (100 / 120 / 200 บาท) ยืนยันอีกครั้งก่อนเดินทางนะ</div>
+  </section>
+
+  <section class="pink">
+    <h2>📶 สิ่งที่ควรรู้</h2>
+    <div class="grid">
+      <div class="box">
+        <strong>📱 สัญญาณโทรศัพท์</strong>
+        AIS และ True ใช้ได้ ดีแทคมีแค่บางจุด
+      </div>
+      <div class="box blue">
+        <strong>🔋 ชาร์จแบต</strong>
+        ชาร์จที่ส่วนกลาง 07.45 – 18.00 น. (คาเฟ่ถึง 20.00 น.)<br>
+        ห้องพักส่วนตัวมีช่อง USB ชาร์จได้ตลอด
+      </div>
+      <div class="box">
+        <strong>💡 ไฟและพัดลม</strong>
+        ไฟเปิด 18.00 – 06.00 น.<br>
+        หน้าฝนอาจดับกลางคืน (พลังงานไม่พอ)
+      </div>
+      <div class="box blue">
+        <strong>🌙 เงียบสงบ</strong>
+        22.00 – 09.00 น. งดเสียงดัง<br>
+        เหมาบ้านคุยได้ปกติ แต่งดเสียงเพลง
+      </div>
+    </div>
+    <div class="note">ไฟดับหรือพัดลมดับตอนกลางคืน โทร 094-853-9459 ได้ 24 ชั่วโมง หรือเคาะประตูเรียกได้เลย</div>
+  </section>
+
+  <section>
+    <h2>🎒 ควรนำมาเอง</h2>
+    <ul>
+      <li>ผ้าเช็ดตัว ของใช้ส่วนตัว สบู่ ยาสีฟัน</li>
+      <li>แบตสำรอง และที่ชาร์จให้พร้อม</li>
+      <li>ไฟฉายส่วนตัว</li>
+      <li>ยากันยุง</li>
+      <li>เครื่องดื่ม เหล้า เบียร์ บุหรี่ (ของตัวเอง)</li>
+    </ul>
+    <div class="note">🍳 เนื่องจากอยู่ห่างไกล ควรสั่งอาหารล่วงหน้าก่อนเดินทาง</div>
+  </section>
+
+  <section class="sea">
+    <h2>🌊 กิจกรรม</h2>
+    <ul>
+      <li><span class="free">ฟรี</span> ตกปลาหน้าดิน, เล่นน้ำบริเวณที่พัก (ใช้ห่วงยาง/ชูชีพ)</li>
+      <li><span class="free">ฟรี</span> งมหอย เก็บเห็ดตามฤดูกาล ดูวิถีชีวิตชาวเรือชาวแพ</li>
+      <li><span class="free">ฟรี</span> ตักบาตรหน้าบ้านตอนเช้า</li>
+      <li><span class="price">150 บาท/ชม.</span> เรือคายัค (2 ท่าน)</li>
+      <li><span class="price">150 บาท/ท่าน</span> ล่องแพเปียก ชมพระอาทิตย์ตก</li>
+      <li><span class="price">150 บาท/ท่าน</span> ล่องเรือไปทำบุญสร้างพระที่สำนักสงฆ์ (ไปกลับ)</li>
+      <li>บริจาคของใช้มือสองที่ศูนย์อพยพ (ไปได้ตามรอบ)</li>
+    </ul>
+  </section>
+
+  <section class="sunset">
+    <h2>📜 กฎบ้านเรา</h2>
+    <ul>
+      <li>🚫 ห้ามนำยาเสพติด หรือของผิดกฎหมายเข้า ไม่งั้นต้องออกจากบ้านทันที</li>
+      <li>🚫 ห้ามทะเลาะวิวาท โดยเฉพาะตอนเมาสุรา ต้องออกจากบ้านทันที</li>
+      <li>🔥 ห้ามจุดไฟเอง บ้านทำจากไม้ไผ่ติดไฟง่าย ปิ้งย่างใช้จุดบริการฟรี</li>
+      <li>🦺 ใส่ชูชีพทุกครั้งที่เล่นน้ำ และไม่เล่นน้ำถ้าเมาเหล้า</li>
+      <li>🐘 ควรถึงก่อนพระอาทิตย์ตก เพราะกลางคืนช้างป่าออกหากินเยอะ</li>
+      <li>💇 ไดร์เป่าผม เครื่องหนีบผม และเตาปิ้งย่างไฟฟ้า ใช้ไม่ได้ (ระบบไฟ DC)</li>
+      <li>🧹 ช่วยกันดูแลความสะอาด เสียหายจากลูกค้าคิดตามจริง</li>
+      <li>👶 เด็กนั่งดิ้งตามมาทีหลัง คิด <span class="price">350 บาท/ท่าน</span> และต้องเหมาบ้านทั้งหลัง</li>
+      <li>🐶 สัตว์เลี้ยงขึ้นบ้านได้ <span class="price">300 บาท/ตัว</span> (≤ 7 กก.) บอกก่อนจองทุกครั้ง มีแค่ 2 หลัง</li>
+    </ul>
+  </section>
+
+  <section class="pink">
+    <h2>💸 การจองและยกเลิก</h2>
+    <ul>
+      <li>มัดจำ <strong>ไม่คืนทุกกรณี</strong></li>
+      <li>เลื่อนวันได้ภายใน 1 ปีนับจากวันจอง โดยต้องแจ้งอย่างน้อย 2–3 วันก่อนเดินทาง</li>
+    </ul>
+  </section>
+
+  <footer>
+    ขอบคุณที่ไม่รังเกียจบ้านของเรานะ แล้วเจอกันจ้า 💕
+  </footer>
+
+</div>
+</body>
+</html>
